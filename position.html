@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Position practise
+        </title>
+    </head>
+    <body style="padding-bottom:1000px;
+    padding-top:50px;
+    padding-left:72px;
+    /* which is more than side bar width */
+    ">
+        <!-- or height:1000px in above line to have the scroll bar moved -->
+        <div style="
+        background-color:black;
+        color:white;
+        position:fixed;
+        /* to move this header around we use the following syntax */
+        top:0px;
+/* space from left edge of our window       */
+ left: 0px;
+ right:0px;
+ /* these left and right values can also be -ve */
+ /* bottom:200px; */
+ /* instead of giving bottom which can be changed with window,we give height  */
+ height:50px;
+ margin-bottom: 30px;
+ /* the element with high index will be shown in front,its default value is 0  */
+
+ z-index:100;
+ ">
+
+ header</div>
+ <div style="background-color:blue;
+ color:white;
+ position:fixed;
+ left:0px;
+ bottom:0px;
+ top:50px;
+ /* since our left section should cover our header so keeping just below that by giving top value which is height of our header div such that side bar will be 50px gap from the top  */
+width: 72px;
+">
+    sidebar
+    <!-- now below writing a position absolute with in position fixes -->
+    <div style="background-color: red;
+ position:absolute;
+ 
+ right: 0px;
+ top:0px;
+ color:white;
+ /* and the above mentioned position values will be wrt sidebar */
+ 
+ ">
+
+
+    X
+ </div>
+ </div>
+ <!-- practising the position absolute -->
+ <div style="background-color: red;
+ position:absolute;
+ right: 10px;
+ top:60px;
+ color:white;
+ 
+ ">
+   <!-- by default since absolute div is used in code after the header div so our absolute will appear in front of  header so to override  this we use "z-index" -->
+
+
+    absolute
+ </div>
+<div style="
+    height:200px;
+    width: 200px;
+    background-color: lightgreen;
+    /* no change if static i think */
+    position:static;
+">
+    div1
+</div>
+<div style="
+height:200px ;
+width: 200px;
+background-color: lightcoral;
+position: relative;">
+    div2
+    since it is position relative ,if we scroll the page it(time-5:00) looks like normal(the time which is absolute) 
+    
+    <div style="background-color: red;
+ position:absolute;
+ right: 10px;
+ bottom:10px;
+ color:white;">
+ 5:00
+</div>
+    </body>
+</html>
+<!-- note:by default position is static -->

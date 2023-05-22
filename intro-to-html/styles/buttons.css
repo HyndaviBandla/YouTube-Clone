@@ -1,0 +1,66 @@
+.subscribe-button{
+    background-color: rgb(217, 1, 1);
+    border: none;
+    color: white;
+    /* space around the element=margin */
+    margin-right: 12px;
+    /* padding: 15;
+    font-size: 20; */
+    height: 35px;
+    width: 100px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: opacity 0.15s;
+
+}
+/* this below one is called as pseudo class which will add the styles  present in it in addition to styles above in .subscribe-button when  we hover over that button
+.subscribe-button:hover{
+    background-color: green;
+}
+/* this active pseudo class activates when we click on the element */
+/* .subscribe-button:active{
+    background-color: aqua; */ 
+/* } */
+.subscribe-button:hover{
+    opacity: 0.8;
+}
+.subscribe-button:active{
+    opacity: 0.5;
+}
+.join-button{
+    border-width: 1px;
+    border-radius: 3px;
+    border-color: rgb(41, 118, 211);
+    color: rgb(41, 118, 211);
+    background-color: white;
+    height: 35px;
+    width: 80px;
+    cursor: pointer;
+    transition: background-color 0.15s,
+    color ;
+}
+.join-button:hover{
+    /* need to shift the colours of background and text colours when we hover */
+background-color:rgb(41, 118, 211);
+color:white
+}
+.join-button:active{
+    opacity: 0.8;
+}
+.tweet-button{
+    border: none;
+    background-color: rgb(3, 128, 253);
+    height: 35px;
+    border-radius: 45px;
+font-weight:bold ; 
+/* since need more size we use font-size */  
+font-size:15px;
+    color:white;
+    width: 80px;
+    cursor: pointer;
+    margin-left: 12px;
+transition:box-shadow 0.15s;
+}
+.tweet-button:hover{
+box-shadow:5px 6px 4px rgba(0, 0, 0,0.5);
+}

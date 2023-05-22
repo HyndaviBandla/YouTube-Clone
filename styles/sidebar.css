@@ -1,0 +1,38 @@
+.side-bar{
+    background-color: white;
+    left:0px;
+    bottom:0px;
+    top:60px;
+    position: fixed;
+    width:72px;
+    z-index: 200px;
+    /* since z-index for header is 10px,as in youtube page the side bar is covering the header  */
+padding-top:5px ;
+}
+/* in you tube video they given class name is like .sidebar-link */
+.sidebar-icons{
+    background-color: white;
+    height: 74px;
+    display: flex;
+    justify-content:center;
+    /* for above one they aline horizontally */
+    align-items: center;
+    /*  above one for vertical centering */
+    flex-direction: column;
+    
+}
+.sidebar-icons:hover{
+    background-color: rgb(240, 236, 236);
+    cursor: pointer;
+}
+/* without creating the class for all the images in side bar and styling them,we are targetting those images at a time and styling them */
+.sidebar-icons img{
+    height: 26px;
+    margin-bottom: 10px;
+
+    
+}
+.side-bar div{
+    font-family: Roboto,Arial;
+    font-size: 12px;
+}

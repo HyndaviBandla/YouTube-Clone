@@ -1,0 +1,17 @@
+p{
+    font-family: Roboto,Arial;
+    /* here arial is the back upfont which is used when the font roboto fails to download from the google */
+margin-top: 0px;
+margin-bottom: 0px;
+
+}
+/* since by default there will be marin for the body element so to remove that spaces around we do  */
+body{
+    margin:0px;
+    padding-top: 80px ;
+    padding-bottom: 1000px;
+    /* for scrolling we gave above syntax */
+padding-left:95px ;
+padding-right: 24px;
+background-color: rgb(246, 242, 242);
+}

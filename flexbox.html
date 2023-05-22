@@ -1,0 +1,159 @@
+<!-- using flex box for header of our final project -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+<title>
+    flex-box
+</title>
+    </head>
+    <body style="padding-bottom:1000px;">
+        <!-- adding padding to the bottom of the body so that we can scroll that o the top -->
+<div style="
+display:flex;
+flex-direction:row;
+margin-bottom: 30px;
+
+/* by default flex direction is row */
+/* that means we are displaying these elements horizontally in a horizontal layout */
+">
+    <div style="background-color: lightblue;">
+div1 text
+    </div>
+    <div style="background-color: lightpink;">
+div2 <p>text</p>
+    </div>
+</div>
+<div style="
+display:flex;
+flex-direction:row;
+margin-bottom: 30px;
+">
+    <div style="
+    background-color: lightblue;
+    width: 100px;">
+100px
+    </div>
+    <div style="background-color: lightpink;
+    flex: 1;">
+div2 <p>text</p>
+    </div>
+   
+</div>
+<div style="
+display:flex;
+flex-direction:row;
+">
+    <div style="
+    background-color: lightblue;
+    width: 100px;">
+100px
+    </div>
+    <div style="background-color: lightpink;
+    flex: 1;">
+flex:1 
+    </div>
+    <div style="
+    background-color: lightblue;
+    width: 100px;
+    flex: 2;">
+    <!-- flex 2 will take the space double f the flex1 -->
+flex:2
+    </div>
+</div>
+<div style="
+display:flex;
+flex-direction:row;
+margin-top: 30px;
+height: 70px;
+    border-width: 1px;
+    border-style:solid;
+    border-color: grey;
+    justify-content:center;
+    /* u can also use left and right */
+">
+    <div style="
+    background-color: lightblue;
+    width: 100px;
+   ">
+100px
+    </div>
+    <div style="background-color: lightpink;
+    /* flex: 1; */
+    width:100px
+    ">
+100px
+    </div>
+    <div style="
+    background-color: lightblue;
+    width: 100px;
+   ;">
+    <!-- flex 2 will take the space double f the flex1 -->
+100px
+    </div>
+</div>
+<div style="
+display:flex;
+flex-direction:row;
+margin-top: 30px;
+height: 70px;
+    border-width: 1px;
+    border-style:solid;
+    border-color: grey;
+    justify-content:space-between;
+">
+    <div style="
+    background-color: lightblue;
+    width: 100px;
+   ">
+100px
+    </div>
+    <div style="background-color: lightpink;
+    /* flex: 1; */
+    width:100px
+    ">
+100px
+    </div>
+    <div style="
+    background-color: lightblue;
+    width: 100px;
+   ;">
+    <!-- flex 2 will take the space double f the flex1 -->
+100px
+    </div>
+</div>
+<div style="
+display:flex;
+flex-direction:row;
+margin-top: 30px;
+height: 70px;
+    border-width: 1px;
+    border-style:solid;
+    border-color: grey;
+    justify-content:space-between;
+    align-items:end;
+    /*strech -value streching to fill up the vertical space */
+    /* it have also values start ,end and center */
+">
+    <div style="
+    background-color: lightblue;
+    width: 100px;
+   ">
+100px
+    </div>
+    <div style="background-color: lightpink;
+    /* flex: 1; */
+    width:100px
+    ">
+100px
+    </div>
+    <div style="
+    background-color: lightblue;
+    width: 100px;
+   ;">
+    <!-- flex 2 will take the space double f the flex1 -->
+100px
+    </div>
+</div>
+    </body>
+</html>

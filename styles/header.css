@@ -1,0 +1,180 @@
+/* since div are by default are displayed as  block so before using flex left ,right and midle sections in header part  were displayed in vertical  */
+.header{
+    height: 60px;
+    display: flex;
+    flex-direction:row;
+    justify-content:space-between;
+/* flex box to spread our content evenly(for content size also) and with equal spaces */
+position:fixed;
+top:0px;
+left:0px;
+right:0px;
+/* if the header was set to fixed then it will be floating on the page */
+z-index: 100;
+/* since the thumbnail(video pic ) is comming over the header when we scroll */
+background-color: white;
+/* going to general.css  and setting "padding-top" in our body element since our header is coveing our content */
+border-bottom-width:1px;
+border-bottom-style:solid;
+border-bottom-color:rgb(231, 228, 228);
+
+}
+.left-section{
+/* background-color: aqua; */
+/* width: 170px; */
+align-items: center;
+/* there will be no change occured because that left section div is  in the form of regular div (but outer one header is flex )is  do we need to change that in to form of flex */
+/* here even the header is flex it effects only the outer left section, middle section and right section but not the internal ones of these sections */
+/* so keeping a flex box with in other flex box is totally valid */
+display:flex;
+
+}
+.hamburger-menu{
+height:25px;
+margin-left: 24px;
+margin-right: 24px;
+}
+.youtube-logo{
+height: 25px;
+}
+.middle-section{
+    /* background-color: lightpink; */
+flex:2;
+margin-left: 70px;
+margin-right: 35px;
+max-width: 700px;
+/* since at some particular point the increasing( so given flex:2) of the middle section stops that is the search bar */
+display:flex;
+align-items:center;
+
+}
+.search-bar{
+height:36px ;
+padding-left:10px;
+font-size:16px;
+flex:1;
+/* border-width: 1px;
+border-style:solid;
+border-color: rgb(217, 215, 215); */
+border:1px solid rgb(217,215,215);
+
+border-radius:3px;
+box-shadow: inset 1px 2px 3px rgba(0,0,0,0.05);
+/* here 1px-horizonta1,2px-vertical,3px is blurr ness,a is opacity 0-1 */
+/* we used inset because the shadow is inside the box not out side */
+width:0px;
+/* we used above syntax so that the search bar shrinks  */
+}
+.search-bar::placeholder{ 
+  /* look at these syntaxes above line and that above padding syntax and below*/
+font-size:15px;
+
+}
+.search-button{
+  height: 40px;
+width:60px;
+background-color:rgb(252, 248, 248) ;
+border-width:1px;
+border-color:rgb(217, 215, 215) ;
+border-style: solid;
+/* need to keep as solid then only we will get the colour evenly on al the sides */
+
+margin-left: -2px;
+}
+.search-button .voice-search-button .upload-icon-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+}
+/* below syntax is like targetting .tooltip class not on the entire page but only inside search button and others for their respective ones */
+.search-button .tooltip ,.voice-search-button .tooltip ,.upload-icon-container .tooltip{
+  position: absolute;
+  bottom: -35px;
+  color:white;
+  background-color: rgb(105, 104, 104);
+  /* padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px; */
+  padding:4px 8px;
+  border-radius: 2px;
+  opacity: 0;
+  transition: opacity 0.15s;
+    /* to disable the hover on the tool tip we use below syntax */
+pointer-events: none;
+white-space: nowrap;
+/* centering the tool tip with the button */
+
+}
+/* below inthese types the space is imp btw hover and tooltip */
+.search-button:hover .tooltip ,.voice-search-button:hover .tooltip,.upload-icon-container:hover .tooltip{
+  opacity: 1;
+
+
+}
+.search-icon{
+  height: 23px;
+}
+.voice-search-button{
+height: 40px;
+width:40px;
+border-radius:50%;
+/* obove value can be 20px for round shape */
+/* here border radius can be of half of height and width of 20px to get the round shape */
+margin-left: 8px;
+border-color:rgb(217, 215, 215) ;
+border:none;
+
+}
+.voice-search-icon{
+  height: 24px;
+  /* this is to push that icon to down in that button */
+}
+.right-section{
+  width:200px;
+  /* decreasing width to 180px to make the items close  to each other */
+  width: 180px;
+  display:flex;
+  flex-direction: row;
+  /* dy default only row,no problem if not mentioned */
+  align-items: center;
+  justify-content:space-between;
+  margin-right: 12px;
+  flex-shrink:0;
+  /* since the icons in the right section were shrinking when the window size decreased( as flex boxes shrinks ) so we use the above syntax */
+}
+.upload-icon{
+  height: 25px;
+
+}
+.youtube-app-icon{
+height: 25px;
+}
+.notifications-icon{
+  height: 25px;
+  
+}
+/* below is div of notification-icon */
+.notifications-icon-container{
+position: relative;
+}
+.notifications-count{
+  background-color: rgb(193, 3, 3);
+  color: white;
+  /* height: 15px;
+  width: 15px; */
+  
+  padding: 2px 5px;
+  font-size: 11px;
+  font-family: Roboto,Arial;
+  border-radius: 50%;
+  text-align: center;
+  position: absolute;
+  top: 0px;
+  right:-4px ;
+}
+.channel-user-pic{
+height: 42px;
+}
